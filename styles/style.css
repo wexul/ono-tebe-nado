@@ -6,7 +6,7 @@ html{
 .header{
   display: flex; /*чтобы все красиво по горизонтали*/
   align-items: center; /*чтобы все красиво выровнять*/
-  margin: 92px 24px 96px; /*отступы от краев header до страницы*/
+  padding: 92px 24px 96px; /*отступы от краев header до страницы*/
   font-weight: 400;
   font-size: 18px;
 }
@@ -19,8 +19,7 @@ html{
   display: flex;
   gap: 32.5px; /*замерял опытным путем через perfectpixel*/
   letter-spacing: 0.45px; /*в макете буквы в текстах шире чем есть, в фигме letter-spacing стоит 1%, но он не работает, поэтому приблизительно в px */
-  list-style:circle;/*чтобы все красиво по горизонтали*/
-  
+  list-style:circle;
 }
 
 .header__links-list-item_no-bullit{
@@ -32,17 +31,17 @@ html{
   text-decoration: none; /*убрал нижнее подчеркивание*/
 }
 
-
+.header__logo{
+  margin:0 184px 0 0; /*сделал отступ между лого и адресами*/
+}
 
 .header__logo-anchor{
   display: block; /*советовали в подсказках, сейчас когда пишу коменты(поздно ночью) не могу точно вспомнить для чего это. короче требует доп. обьяснения*/
-  margin-right: 184px;
-}
-
-.header__logo-image{
   width: 148px;
   height: 105px; /*задал конкретные размеры для картинки как в макете, не уверен что так надо*/
 }
+
+
 
 .address{
   font-style: normal;
@@ -50,16 +49,17 @@ html{
   white-space: nowrap; /*чтобы не переносились телефоны и адреса*/
 }
 
-
-
-
-
 .overlay{
-  background-image: url("/images/lotus-flower.svg");
+  background-color: rgb(0 0 0 / 0.6); /*затемнение фона*/
+  color:#fff;
+  position: relative; /*делаем оверлей позиционированным чтобы потом на его размер растянуть картинку*/
+}
+.overlay_background-image{
+  position: absolute; /*растягиваем картинку*/
+  z-index: -1;/*убираем картинку на задний фон*/
 }
 .cover__title{
   padding: 165px 50px 135px;
-  color:#fff;
   font-weight: 700;
   font-size: 100px;
   line-height: 100%;
@@ -90,8 +90,34 @@ html{
 .aligned-text-no-bottom-margin{
   margin-bottom: 0;
 }
-
-
-
+.cover__description{
+  display: flex;
+  padding: 0 50px 32px 78px;
+  gap:79px;
+}
+.cover__description-text{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 127%;
+  word-spacing: 18px;
+  text-transform: uppercase;
+}
+.space{
+  letter-spacing: 0.8em;
+}
+.letter{
+  letter-spacing: 1.1em;
+}
+.bet-button{
+  background-color: transparent;
+  color:#fff;
+  border: 1px solid #ffffff;
+  font-weight:500;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 0px  32px 0px 31px;
+  width:256px;
+  height:51px;
+}
 
 
