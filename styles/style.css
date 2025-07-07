@@ -1,0 +1,92 @@
+/*для красивой прокрутки в навигации*/
+html{
+  scroll-behavior: smooth;
+}
+
+.header{
+  display: flex; /*чтобы все красиво по горизонтали*/
+  align-items: center; /*чтобы все красиво выровнять*/
+  margin: 92px 24px 96px; /*отступы от краев header до страницы*/
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.header__menu{
+  padding:44px 36px 39px 26.52px; /*отступы от краев header до блока с меню*/
+}
+
+.header__links-list{
+  display: flex;
+  gap: 32.5px; /*замерял опытным путем через perfectpixel*/
+  letter-spacing: 0.45px; /*в макете буквы в текстах шире чем есть, в фигме letter-spacing стоит 1%, но он не работает, поэтому приблизительно в px */
+  list-style:circle;/*чтобы все красиво по горизонтали*/
+  
+}
+
+.header__links-list-item_no-bullit{
+  letter-spacing: 0; /*тут буквы стандартной ширины, в макете как раз стоит 0*/
+  list-style:none; /*убираем значок у главной*/
+}
+
+.header__link_active{
+  text-decoration: none; /*убрал нижнее подчеркивание*/
+}
+
+.header__logo{
+  margin:0 184px 0 0; /*сделал отступ между лого и адресами*/
+}
+
+.header__logo-anchor{
+  display: block; /*советовали в подсказках, сейчас когда пишу коменты(поздно ночью) не могу точно вспомнить для чего это. короче требует доп. обьяснения*/
+}
+
+.header__logo-image{
+  width: 148px;
+  height: 105px; /*задал конкретные размеры для картинки как в макете, не уверен что так надо*/
+}
+
+.address{
+  font-style: normal;
+  line-height:135%;
+  white-space: nowrap; /*чтобы не переносились телефоны и адреса*/
+}
+
+.overlay{
+  background-image: url("/images/lotus-flower.svg");
+}
+.cover__title{
+  padding: 165px 50px 135px;
+  color:#fff;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100%;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.letter-spacing-extended{
+  letter-spacing: 0.6em;
+}
+.aligned-text{
+  display: block;
+  margin-bottom: 20px;
+}
+.aligned-text-left{
+  line-height:115%;
+}
+.aligned-text_center{
+  text-align: center;
+}
+.aligned-text_right{
+  text-align: right;
+}
+.no-letter-spacing{
+  letter-spacing: 0;
+}
+.aligned-text-no-bottom-margin{
+  margin-bottom: 0;
+}
+
+
+
+
+
