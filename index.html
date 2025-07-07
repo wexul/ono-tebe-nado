@@ -22,7 +22,7 @@
         </li>
      </ul>
     </nav>
-    <a class = "header__logo-anchor header__logo">
+    <a class = "header__logo-anchor header__logo" href ="">
       <img class ="header__logo-image" src ="images/logo.svg" alt="Логотип аукциона">
     </a>
     <address class = "address header__address">
@@ -35,7 +35,7 @@
             <img class = "overlay_background-image" src = "/images/lotus-flower.svg" alt="задний фон">
             <h1 class ="cover__title">
               <span class ="aligned-text aligned-text-left">
-                <span class = "no-letter-spacing">о</span> <!-- letter-spacing:30% line-height: 115%; -->
+                <span class = "no-letter-spacing">о</span> <!-- letter-spacing:0% line-height: 115%; -->
                 <span class = "letter-spacing-extended">но</span> <!-- letter-spacing:60% line-height: 115%; -->
               </span>
               <span class = "aligned-text aligned-text_center">
@@ -45,7 +45,7 @@
               <span class = "aligned-text aligned-text-no-bottom-margin aligned-text_right">
                 <span class = "letter-spacing">н</span><!-- letter-spacing:60% line-height: 100%; -->
                 <span class = "no-letter-spacing">а</span> <!-- letter-spacing:0% line-height: 100%; -->
-                <span class = "letter-spacing">д</span> <!-- letter-spacing:0% line-height: 100%; -->
+                <span class = "letter-spacing">д</span> <!-- letter-spacing:30% line-height: 100%; -->
                 <span class = "no-letter-spacing">о</span> <!-- letter-spacing:0% line-height: 100%; -->
               </span>
             </h1>
@@ -55,9 +55,58 @@
             </p>
             <button class ="bet-button">Сделать ставку</button>
         </div>
-      </div>
     </section>
+
     <section class = "lots" id = "lots">
+      <h2 class ="lots__heading">Лоты</h2>
+      <ul class ="lots__card-list">
+        <li class="lots__card-list-item">
+          <a class = "card-link" href ="">
+            <div class = "overlay">
+              <article class = "card card_type_film">
+                  <img class = "overlay_background-image" src = "/images/photo-film.svg" alt="задний фон">
+                  <h3 class="card__title">
+                    Фильм режиссёра, который бросил киношколу
+                  </h3> 
+                  <p class ="card__text">
+                    Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                  </p>
+                </article>
+            </div>
+          </a>
+        </li>
+        <li class="lots__card-list-item">
+          <a class = "card-link" href ="">
+            <div class = "overlay">
+              <article class = "card card_type_book">
+                  <img class = "overlay_background-image" src = "/images/photo-book.svg" alt="задний фон">
+                  <h3 class="card__title">
+                    Книга, где описан один скучный день из жизни рекламного агента
+                  </h3> 
+                  <p class ="card__text">
+                    Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+                  </p>
+                </article>
+            </div>
+          </a>
+        </li>
+        <li class="lots__card-list-item">
+          <a class = "card-link" href ="">
+            <div class = "overlay">
+              <article class = "card card_type_picture">
+                  <img class = "overlay_background-image" src = "/images/photo-picture.svg" alt="задний фон">
+                  <h3 class="card__title">
+                    Картина, которую повторит даже 5-летний сын маминой подруги
+                  </h3> 
+                  <p class ="card__text">
+                    Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
+                  </p>
+                </article>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <a class="lots__look-more-link" href ="">посмотреть больше</a>
     </section>
     <section class = "about" id ="about">
 
@@ -68,4 +117,3 @@
   </footer>
 </body>
 </html>
-
