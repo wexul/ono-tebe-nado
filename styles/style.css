@@ -51,6 +51,10 @@ html{
   white-space: nowrap; /*чтобы не переносились телефоны и адреса*/
 }
 
+
+
+
+
 .overlay{
   background-image: url("/images/lotus-flower.svg");
 }
@@ -60,8 +64,10 @@ html{
   font-weight: 700;
   font-size: 100px;
   line-height: 100%;
-  letter-spacing: 0.3em;
   text-transform: uppercase;
+}
+.letter-spacing{
+  letter-spacing: 0.3em;
 }
 .letter-spacing-extended{
   letter-spacing: 0.6em;
